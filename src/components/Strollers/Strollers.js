@@ -3,9 +3,9 @@ import  { useState, useEffect } from 'react';
 import axios from 'axios';
 import Stroller from './Stroller'
 import 'react-bulma-components/dist/react-bulma-components.min.css';
-import SubNav from './SubNav'
-import Navbar from './Navbar';
-import './Navbar.css'
+import SubNav from '../SubNav';
+import Navbar from '../Navbar';
+import '../../Navbar.css';
 import styled from "styled-components"
 
 
@@ -44,15 +44,11 @@ const Strollers = () => {
       
         <div className="home">
             <Navbar/>
-           
             <div className="hero">Hero image goes here</div>
             <div className="header">
                 <center>
                 <SubNav/>
-
                 </center>
-               
-                
             </div>
             <center>
             <section className="section">
@@ -62,6 +58,7 @@ const Strollers = () => {
                     </div>
                 </div>
             </section>
+           
             </center>
         </div>
        

@@ -5,16 +5,16 @@ import "./components/FontAwesome"
 
 import { Route, Switch } from 'react-router-dom'
 // import { Route, Switch } from 'react-router-dom'
-import Strollers from './components/Strollers';
-import Stroller from './components/Stroller';
+import Strollers from './components/Strollers/Strollers';
+import Stroller from './components/Stroller/Stroller';
 
 function App() {
   return (
     
         <div >
           <Switch>
-            <Route exact path="/:slug" component={Stroller} />
             <Route exact path="/" component={Strollers} />
+            <Route exact path="/strollers/:slug" component={Stroller} />
           </Switch>
         </div>
   
